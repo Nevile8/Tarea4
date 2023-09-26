@@ -1,0 +1,179 @@
+/* Apply background color to the header */
+.header {
+    background-color: #F5A9B8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the title in the header */
+  .title {
+    color: #FFFFFF; /* White text color */
+  }
+  
+  /* Style the gallery section */
+  .galeriaImg {
+    background-color: #24c4ec;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the images within the gallery */
+  .myImg {
+    border: 2px solid #F5A9B8;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    }
+  
+    .image-container img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    max-width: calc(33.33% - 20px);
+    }
+  
+    .image-container img:hover {opacity: 0.7;}
+  
+  /* Style the modal (popup) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+  
+    /* Modal Content (image) */ 
+    .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    }
+
+    #caption {
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+    }
+
+    .modal-content, #caption {  
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+
+    /* Style the close button */
+    .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;    
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    @media only screen and (max-width: 700px){
+        .modal-content {
+        width: 100%;
+        max-height: 70%;
+        }
+    }
+  
+  /* Style the form section */
+  .form {
+    background-color: #F5A9B8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the main content section */
+  .main {
+    padding: 20px;
+    background-color: #24c4ec;
+  }
+  
+  /* Style the sections with icons */
+  .tiempos {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the icons within the sections */
+  .icon-tabler {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: #000000;
+  }
+  
+  /* Style the calculator section */
+  .calulator {
+    background-color: #F5A9B8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the difference in age section */
+  .difEdad {
+    background-color: #5BCEFA;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the input elements */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5BCEFA;
+    border-radius: 5px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"],
+  button[type="button"] {
+    background-color: #5BCEFA;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  button[type="submit"]:hover,
+  button[type="button"]:hover {
+    background-color: #0094C6; /* Darker shade of blue */
+  }
+  
